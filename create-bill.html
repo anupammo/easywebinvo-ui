@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>EaseWebInvo - Easy Invoice Management on Web from anywhere</title>
+</head>
+
+<body>
+
+    <header class="header-bg-grad1 py-5">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-6">
+                    <p>Date: <span id="livedate"></span></p>
+                </div>
+                <div class="col-6">
+                    <p>Date: <span id="livetime"></span></p>
+                </div> -->
+                <div class="col-12">
+                    <h1 class="text-center text-white">Create Invoice</h1>
+                    <p class="text-center text-white">An Easy Web Invoice Solution</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane my-5 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-12 my-2">
+                            <label>Invoice NO</label>
+                            <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="Invoice NO">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label>Invoice Date</label>
+                            <input type="date" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="Invoice Date">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label>PO NO</label>
+                            <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="PO NO">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label>PO Date</label>
+                            <input type="date" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="PO Date">
+                        </div>
+                        <div class="col-12">
+                            <a class="btn btn-dark float-right shadow-none rounded-0 px-5 my-3" id="profile-tab" data-toggle="tab"
+                                href="#profile" role="tab" aria-controls="profile" aria-selected="false">Next</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-12 my-2">
+                            <div class="form-group">
+                                <label class="text-primary">Client Name</label>
+                                <input type="text" class="form-control border-primary shadow-none rounded-0"
+                                    placeholder="Invoice NO">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-primary">Client GSTIN NO</label>
+                                <input type="text" class="form-control border-primary shadow-none rounded-0"
+                                    placeholder="PO Date">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <div class="form-group">
+                                <label class="text-primary">Client Address</label>
+                                <textarea class="form-control border-primary shadow-none rounded-0 py-3" id=""
+                                    rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 my-2">
+                            <div class="form-group">
+                                <label class="text-primary">Client Mobile</label>
+                                <input type="tel" class="form-control border-primary shadow-none rounded-0"
+                                    placeholder="Invoice Date">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <div class="form-group">
+                                <label class="text-primary">Client Email</label>
+                                <input type="email" class="form-control border-primary shadow-none rounded-0"
+                                    placeholder="PO NO">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a class="btn btn-primary float-right shadow-none rounded-0 px-5" id="contact-tab" data-toggle="tab"
+                                href="#contact" role="tab" aria-controls="contact" aria-selected="false">Next</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade my-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-12">
+                            <div class="form-group">
+                                <label>No</label>
+                                <input type="number" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="eg : 01">
+                            </div>
+                            <div class="form-group">
+                                <label>HSN Code</label>
+                                <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="eg : XX XX XXXX">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-12">
+                            <div class="form-group">
+                                <label>Particulars / Description</label>
+                                <textarea class="form-control border-dark shadow-none rounded-0 py-3" id=""
+                                    rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-12">
+                            <div class="form-group">
+                                <label>Unit</label>
+                                <select class="form-control border-dark shadow-none rounded-0" id="">
+                                    <option>Pices</option>
+                                    <option>Boxes</option>
+                                    <option>Litre</option>
+                                    <option>Kilogram</option>
+                                    <option>Meter</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Quantity</label>
+                                <input type="number" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="eg : XX XX XXXX">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-12">
+                            <div class="form-group">
+                                <label>Price</label>
+                                <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="eg : XX XX XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label>GST</label>
+                                <select class="form-control border-dark shadow-none rounded-0" id="">
+                                    <option>0.25%</option>
+                                    <option>3%</option>
+                                    <option>5%</option>
+                                    <option>12%</option>
+                                    <option>18%</option>
+                                    <option>28%</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a class="btn btn-dark float-right shadow-none rounded-0 px-5" id="contact-tab"
+                                data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                                aria-selected="false">Add</a>
+                            <a class="btn btn-dark float-right shadow-none rounded-0 px-5 mx-2" id="" href="">Done</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <form class="my-5">
+                <div class="row">
+                    <div class="col-md-6 col-12 my-2">
+                        <label>Invoice NO</label>
+                        <input type="text" class="form-control border-dark shadow-none rounded-0"
+                            placeholder="Invoice NO">
+                    </div>
+                    <div class="col-md-6 col-12 my-2">
+                        <label>Invoice Date</label>
+                        <input type="date" class="form-control border-dark shadow-none rounded-0"
+                            placeholder="Invoice Date">
+                    </div>
+                    <div class="col-md-6 col-12 my-2">
+                        <label>PO NO</label>
+                        <input type="text" class="form-control border-dark shadow-none rounded-0" placeholder="PO NO">
+                    </div>
+                    <div class="col-md-6 col-12 my-2">
+                        <label>PO Date</label>
+                        <input type="date" class="form-control border-dark shadow-none rounded-0" placeholder="PO Date">
+                    </div>
+                </div>
+                <hr class="border-primary my-4">
+                <div class="row">
+                    <div class="col-md-6 col-12 my-2">
+                        <div class="form-group">
+                            <label class="text-primary">Client Name</label>
+                            <input type="text" class="form-control border-primary shadow-none rounded-0"
+                                placeholder="Invoice NO">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-primary">Client GSTIN NO</label>
+                            <input type="text" class="form-control border-primary shadow-none rounded-0"
+                                placeholder="PO Date">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 my-2">
+                        <div class="form-group">
+                            <label class="text-primary">Client Address</label>
+                            <textarea class="form-control border-primary shadow-none rounded-0 py-3" id=""
+                                rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12 my-2">
+                        <div class="form-group">
+                            <label class="text-primary">Client Mobile</label>
+                            <input type="tel" class="form-control border-primary shadow-none rounded-0"
+                                placeholder="Invoice Date">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 my-2">
+                        <div class="form-group">
+                            <label class="text-primary">Client Email</label>
+                            <input type="email" class="form-control border-primary shadow-none rounded-0"
+                                placeholder="PO NO">
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-dark my-4">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-12">
+                        <div class="form-group">
+                            <label>No</label>
+                            <input type="number" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="eg : 01">
+                        </div>
+                        <div class="form-group">
+                            <label>HSN Code</label>
+                            <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="eg : XX XX XXXX">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12">
+                        <div class="form-group">
+                            <label>Particulars / Description</label>
+                            <textarea class="form-control border-dark shadow-none rounded-0 py-3" id=""
+                                rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12">
+                        <div class="form-group">
+                            <label>Unit</label>
+                            <select class="form-control border-dark shadow-none rounded-0" id="">
+                                <option>Pices</option>
+                                <option>Boxes</option>
+                                <option>Litre</option>
+                                <option>Kilogram</option>
+                                <option>Meter</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="number" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="eg : XX XX XXXX">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12">
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                placeholder="eg : XX XX XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label>GST</label>
+                            <select class="form-control border-dark shadow-none rounded-0" id="">
+                                <option>0.25%</option>
+                                <option>3%</option>
+                                <option>5%</option>
+                                <option>12%</option>
+                                <option>18%</option>
+                                <option>28%</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form> -->
+        </div>
+    </section>
+    <section class="my-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-white">2021 © EasyWebInvo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
