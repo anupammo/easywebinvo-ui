@@ -1,1 +1,2 @@
 # easywebinvo-ui
+# krins-ca
