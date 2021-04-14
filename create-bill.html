@@ -50,7 +50,7 @@
                                 placeholder="Invoice Date">
                         </div>
                         <div class="col-md-6 col-12 my-2">
-                            <label>PO NO</label>
+                            <label>Purchase Order NO</label>
                             <input type="text" class="form-control border-dark shadow-none rounded-0"
                                 placeholder="PO NO">
                         </div>
@@ -60,8 +60,9 @@
                                 placeholder="PO Date">
                         </div>
                         <div class="col-12">
-                            <a class="btn btn-dark float-right shadow-none rounded-0 px-5 my-3" id="profile-tab" data-toggle="tab"
-                                href="#profile" role="tab" aria-controls="profile" aria-selected="false">Next</a>
+                            <a class="btn btn-dark float-right shadow-none rounded-0 px-5 my-3" id="profile-tab"
+                                data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                aria-selected="false">Next</a>
                         </div>
                     </div>
                 </div>
@@ -71,48 +72,51 @@
                             <div class="form-group">
                                 <label class="text-primary">Client Name</label>
                                 <input type="text" class="form-control border-primary shadow-none rounded-0"
-                                    placeholder="Invoice NO">
-                            </div>
-                            <div class="form-group">
-                                <label class="text-primary">Client GSTIN NO</label>
-                                <input type="text" class="form-control border-primary shadow-none rounded-0"
-                                    placeholder="PO Date">
+                                    placeholder="Client Name">
                             </div>
                         </div>
-                        <div class="col-md-6 col-12 my-2">
-                            <div class="form-group">
-                                <label class="text-primary">Client Address</label>
-                                <textarea class="form-control border-primary shadow-none rounded-0 py-3" id=""
-                                    rows="4"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-6 col-12 my-2">
                             <div class="form-group">
                                 <label class="text-primary">Client Mobile</label>
                                 <input type="tel" class="form-control border-primary shadow-none rounded-0"
-                                    placeholder="Invoice Date">
+                                    placeholder="Client Mobile">
                             </div>
                         </div>
                         <div class="col-md-6 col-12 my-2">
                             <div class="form-group">
                                 <label class="text-primary">Client Email</label>
                                 <input type="email" class="form-control border-primary shadow-none rounded-0"
-                                    placeholder="PO NO">
+                                    placeholder="Client Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <div class="form-group">
+                                <label class="text-primary">Client GSTIN NO</label>
+                                <input type="text" class="form-control border-primary shadow-none rounded-0"
+                                    placeholder="Client GSTIN NO">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="form-group">
+                                <label class="text-primary">Client Address</label>
+                                <textarea class="form-control border-primary shadow-none rounded-0 py-3" id="" rows="2"
+                                    placeholder="Client Address"></textarea>
                             </div>
                         </div>
                         <div class="col-12">
-                            <a class="btn btn-primary float-right shadow-none rounded-0 px-5" id="contact-tab" data-toggle="tab"
-                                href="#contact" role="tab" aria-controls="contact" aria-selected="false">Next</a>
+                            <a class="btn btn-primary float-right shadow-none rounded-0 px-5" id="contact-tab"
+                                data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                                aria-selected="false">Next</a>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade my-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="row">
-                        <div class="col-md-3 col-sm-4 col-12">
+                        <div class="col-md-4 col-sm-4 col-12">
                             <div class="form-group">
-                                <label>No</label>
+                                <label>Item No</label>
                                 <input type="number" class="form-control border-dark shadow-none rounded-0"
                                     placeholder="eg : 01">
                             </div>
@@ -121,15 +125,6 @@
                                 <input type="email" class="form-control border-dark shadow-none rounded-0"
                                     placeholder="eg : XX XX XXXX">
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-12">
-                            <div class="form-group">
-                                <label>Particulars / Description</label>
-                                <textarea class="form-control border-dark shadow-none rounded-0 py-3" id=""
-                                    rows="4"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-12">
                             <div class="form-group">
                                 <label>Unit</label>
                                 <select class="form-control border-dark shadow-none rounded-0" id="">
@@ -146,11 +141,16 @@
                                     placeholder="eg : XX XX XXXX">
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-12">
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="form-group">
+                                <label>Particulars / Description</label>
+                                <textarea class="form-control border-dark shadow-none rounded-0 py-3" id=""
+                                    rows="4"></textarea>
+                            </div>
                             <div class="form-group">
                                 <label>Price</label>
                                 <input type="email" class="form-control border-dark shadow-none rounded-0"
-                                    placeholder="eg : XX XX XXXX">
+                                    placeholder="₹ 2,000">
                             </div>
                             <div class="form-group">
                                 <label>GST</label>
@@ -164,11 +164,31 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="form-group">
+                                <label>Other Adjustment Details</label>
+                                <textarea class="form-control border-dark shadow-none rounded-0 py-3" id=""
+                                    rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Other Adjustment Price</label>
+                                <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="₹ 200">
+                            </div>
+                            <div class="form-group">
+                                <label>Total</label>
+                                <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="₹ 10,000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-12">
                             <a class="btn btn-dark float-right shadow-none rounded-0 px-5" id="contact-tab"
                                 data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
                                 aria-selected="false">Add</a>
-                            <a class="btn btn-dark float-right shadow-none rounded-0 px-5 mx-2" id="" href="">Done</a>
+                            <a class="btn btn-dark float-right shadow-none rounded-0 px-5 mx-2" id=""
+                                href="company-profile.html">Done</a>
                         </div>
                     </div>
                 </div>
