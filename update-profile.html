@@ -96,60 +96,219 @@
     </section>
     <section class="my-5">
         <div class="container">
-            <form action="">
-                <div class="row">
-                    <div class="col-md-6 col-12 my-2">
-                        <label>Company Logo</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text btn-dark border-dark shadow-none rounded-0"
-                                    id="inputGroupFileAddon01">Upload</span>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">Company info</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Payment & Tax</a>
+                </li>
+                <!-- <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Contact</a>
+                </li> -->
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Logo</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text btn-dark border-dark shadow-none rounded-0"
+                                            id="">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input border-dark shadow-none rounded-0"
+                                            id="" aria-describedby="inputGroupFileAddon01" accept="image/*">
+                                        <label class="custom-file-label border-dark shadow-none rounded-0"
+                                            for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input border-dark shadow-none rounded-0"
-                                    id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" accept="image/*">
-                                <label class="custom-file-label border-dark shadow-none rounded-0"
-                                    for="inputGroupFile01">Choose file</label>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Name</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Contact No</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Contact No">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Alternate Contact No</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Alternate Contact No">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Email ID</label>
+                                <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Email ID">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Contact Person Name</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Contact Person Name">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>State Name</label>
+                                <select class="form-control border-dark shadow-none rounded-0" id="">
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Pin Code</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Pin Code">
+                            </div>
+                            <div class="col-12 my-2">
+                                <label>Company Address</label>
+                                <textarea class="form-control border-dark shadow-none rounded-0" rows="3"
+                                    placeholder="Company Address"></textarea>
+                            </div>
+                            <div class="col-12 mt-3 mb-2">
+                                <a class="btn btn-dark shadow-none text-uppercase rounded-0 px-5 my-3" id="profile-tab"
+                                    data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                    aria-selected="false">Update</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-12 my-2">
-                        <label>Company Contact Person Name</label>
-                        <input type="text" class="form-control border-dark shadow-none rounded-0"
-                            placeholder="Contact Person Name">
-                    </div>
-                    <div class="col-md-6 col-12 my-2">
-                        <label>Company Name</label>
-                        <input type="text" class="form-control border-dark shadow-none rounded-0"
-                            placeholder="Company Name">
-                    </div>
-                    <div class="col-md-6 col-12 my-2">
-                        <label>Company GSTIN</label>
-                        <input type="text" class="form-control border-dark shadow-none rounded-0"
-                            placeholder="Company GSTIN">
-                    </div>
-                    <div class="col-md-6 col-12 my-2">
-                        <label>Company Contact No</label>
-                        <input type="text" class="form-control border-dark shadow-none rounded-0"
-                            placeholder="Company Contact No">
-                    </div>
-                    <div class="col-md-6 col-12 my-2">
-                        <label>Company Email ID</label>
-                        <input type="email" class="form-control border-dark shadow-none rounded-0"
-                            placeholder="Company Email ID">
-                    </div>
-                    <div class="col-12 my-2">
-                        <label>Company Address</label>
-                        <textarea class="form-control border-dark shadow-none rounded-0" id="" rows="3"
-                            placeholder="Company Address"></textarea>
-                    </div>
-                    <div class="col-12 mt-3 mb-2">
-                        <a class="btn btn-dark shadow-none text-uppercase rounded-0 px-5 my-3" id="profile-tab"
-                            data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                            aria-selected="false">Update</a>
-                    </div>
+                    </form>
                 </div>
-            </form>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Registration No</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Registration No">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company GSTIN</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company GSTIN">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label class="text-danger d-block">Used Tax Rates</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">0.25%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">3%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">5%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4"
+                                        value="option4">
+                                    <label class="form-check-label" for="inlineCheckbox1">12%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"
+                                        value="option5">
+                                    <label class="form-check-label" for="inlineCheckbox2">18%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6"
+                                        value="option6">
+                                    <label class="form-check-label" for="inlineCheckbox3">28%</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label class="text-danger d-block">Avaialable Payment options</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox1"
+                                        value="option1">
+                                    <label class="form-check-label">PayTM</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox2"
+                                        value="option2">
+                                    <label class="form-check-label">PayPal</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox3"
+                                        value="option3">
+                                    <label class="form-check-label">Debit Card</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox4"
+                                        value="option4">
+                                    <label class="form-check-label">Credit Card</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox5"
+                                        value="option5">
+                                    <label class="form-check-label">BHIM / UPI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox6"
+                                        value="option6">
+                                    <label class="form-check-label">Amazon Pay</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox7"
+                                        value="option7">
+                                    <label class="form-check-label">Google Pay</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox8"
+                                        value="option8">
+                                    <label class="form-check-label">PhonePe</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox9"
+                                        value="option9">
+                                    <label class="form-check-label">Cash</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-2">
+                                <a class="btn btn-dark shadow-none text-uppercase rounded-0 px-5 my-3" id="profile-tab"
+                                    data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                    aria-selected="false">Update</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> -->
+            </div>
         </div>
     </section>
     <footer class="bg-dark pt-3">
