@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Edit Profile - EasyWebInvo, Easy Web App for Invoice Management</title>
+    <style>
+        #bg-wave-warning {
+            background-image: url('warning-wave-bg-1.svg');
+            background-position: top;
+            background-size: cover;
+        }
+
+        .text-shadow-light {
+            text-shadow: #fff 0px 0px 5px;
+        }
+
+        svg {
+            margin-top: -4px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="bg-wave-warning">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <p class="my-2">
+                        <strong><span class="text-shadow-light">Email : </span>info@xyz.com</strong>
+                    </p>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="text-right my-2">
+                        <strong><span class="text-shadow-light">Mobile : </span>9000 000 009</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <img src="logo-company.png" class="img-fluid mx-auto d-block rounded-circle bg-warning shadow p-5"
+                        alt="logo company name" width="220">
+                </div>
+                <div class="col-md-8 col-12">
+                    <h1 class="my-3">
+                        <strong class="text-shadow-light">XYZ Pvt. Ltd.</strong>
+                    </h1>
+                    <p class="mb-2">
+                        <strong class="text-shadow-light"><span>Email : </span>info@xyz.com</strong>
+                    </p>
+                    <p class="mb-2">
+                        <strong class="text-shadow-light"><span>Mobile : </span>900 000 0009</strong>
+                    </p>
+                    <p class="mb-2">
+                        <strong class="text-shadow-light"><span>GSTIN : </span>22AAAAA0000A1Z5</strong>
+                    </p>
+                    <p class="mb-2">
+                        <strong class="text-shadow-light"><span>Address : </span>Kolkata, West Bengal 700001</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="h2 text-uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z">
+                            </path>
+                        </svg>
+                        <strong>Edit</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">Company info</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Payment & Tax</a>
+                </li>
+                <!-- <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Contact</a>
+                </li> -->
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Logo</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text btn-dark border-dark shadow-none rounded-0"
+                                            id="">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input border-dark shadow-none rounded-0"
+                                            id="" aria-describedby="inputGroupFileAddon01" accept="image/*">
+                                        <label class="custom-file-label border-dark shadow-none rounded-0"
+                                            for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Name</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Contact No</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Contact No">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Alternate Contact No</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Alternate Contact No">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Email ID</label>
+                                <input type="email" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Email ID">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Contact Person Name</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Contact Person Name">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>State Name</label>
+                                <select class="form-control border-dark shadow-none rounded-0" id="">
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Pin Code</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Pin Code">
+                            </div>
+                            <div class="col-12 my-2">
+                                <label>Company Address</label>
+                                <textarea class="form-control border-dark shadow-none rounded-0" rows="3"
+                                    placeholder="Company Address"></textarea>
+                            </div>
+                            <div class="col-12 mt-3 mb-2">
+                                <a class="btn btn-dark shadow-none text-uppercase rounded-0 px-5 my-3" id="profile-tab"
+                                    data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                    aria-selected="false">Update</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company Registration No</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company Registration No">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label>Company GSTIN</label>
+                                <input type="text" class="form-control border-dark shadow-none rounded-0"
+                                    placeholder="Company GSTIN">
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label class="text-danger d-block">Used Tax Rates</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">0.25%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">3%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">5%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4"
+                                        value="option4">
+                                    <label class="form-check-label" for="inlineCheckbox1">12%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"
+                                        value="option5">
+                                    <label class="form-check-label" for="inlineCheckbox2">18%</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6"
+                                        value="option6">
+                                    <label class="form-check-label" for="inlineCheckbox3">28%</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <label class="text-danger d-block">Avaialable Payment options</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox1"
+                                        value="option1">
+                                    <label class="form-check-label">PayTM</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox2"
+                                        value="option2">
+                                    <label class="form-check-label">PayPal</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox3"
+                                        value="option3">
+                                    <label class="form-check-label">Debit Card</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox4"
+                                        value="option4">
+                                    <label class="form-check-label">Credit Card</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox5"
+                                        value="option5">
+                                    <label class="form-check-label">BHIM / UPI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox6"
+                                        value="option6">
+                                    <label class="form-check-label">Amazon Pay</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox7"
+                                        value="option7">
+                                    <label class="form-check-label">Google Pay</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox8"
+                                        value="option8">
+                                    <label class="form-check-label">PhonePe</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox9"
+                                        value="option9">
+                                    <label class="form-check-label">Cash</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-2">
+                                <a class="btn btn-dark shadow-none text-uppercase rounded-0 px-5 my-3" id="profile-tab"
+                                    data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                    aria-selected="false">Update</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> -->
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-white">2021 © EasyWebInvo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="create-bill.html" class="btn bg-success text-white position-fixed rounded-circle shadow m-4"
+        style="bottom: 0; right: 0; padding: 10px 8px;" title="Create Invoice">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-plus"
+            viewBox="0 0 16 16" style="margin-bottom: -4px;">
+            <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg>
+    </a>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
